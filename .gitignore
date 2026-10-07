@@ -1,0 +1,50 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+build/
+dist/
+*.egg-info/
+
+# Environment and Secrets (CRITICAL)
+.env
+.env.local
+credentials.json
+token.json
+client_secret*.json
+
+# SQLite & Data files
+*.db
+*.db-journal
+*.sqlite
+*.sqlite3
+data/*.db
+data/*.sqlite
+
+# Process Lock & Logs
+*.lock
+*.log
+
+# Candidate Resumes (PII Protection)
+data/downloads/
+data/incoming_cvs/
+data/sample_cvs/*.pdf
+!data/sample_cvs/.gitkeep
+
+# IDE & OS
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Pytest / Coverage
+.pytest_cache/
+.coverage
+htmlcov/
